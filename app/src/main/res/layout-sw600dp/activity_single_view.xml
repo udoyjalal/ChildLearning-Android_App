@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4C3">
+
+    <ImageView android:id="@+id/SingleView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/gnr" />
+    <TextView
+        android:id="@+id/TVSingleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fgbs"
+        android:textSize="60sp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/SingleView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnPronountiation"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/pronountiationbtnshape"
+        android:text="@string/ju"
+        android:textSize="20sp"
+        android:onClick="BirdPronountiation"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="BirdSound"
+        android:src="@mipmap/audioicon"
+        android:layout_alignTop="@+id/btnPronountiation"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:contentDescription="@string/dhgh" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/backbtn"
+        android:background="@null"
+        android:onClick="backtoBirdGridV"
+        android:id="@+id/button4"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_alignTop="@+id/btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/teyjj" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginBottom="41dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7036610474547852/5458427194"
+        android:layout_alignLeft="@+id/button4"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

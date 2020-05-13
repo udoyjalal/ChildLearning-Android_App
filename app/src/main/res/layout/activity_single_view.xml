@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4C3"
+    tools:context="com.maria.user_pc.gridview.SingleViewActivity">
+
+    <ImageView android:id="@+id/SingleView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todoad" />
+    <TextView
+        android:id="@+id/TVSingleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ddjfl"
+        android:textSize="40sp"
+        android:layout_above="@+id/btn"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp" />
+
+    <Button
+        android:id="@+id/btnPronountiation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/pronountiationbtnshape"
+        android:text="@string/ad"
+        android:textSize="20sp"
+        android:onClick="BirdPronountiation"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/TVSingleView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@null"
+        android:onClick="BirdSound"
+        android:src="@mipmap/audioicon"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:contentDescription="@string/todoadg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/backbtn"
+        android:background="@null"
+        android:onClick="backtoBirdGridV"
+        android:id="@+id/button4"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/TVSingleView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todof" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7036610474547852/5458427194"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

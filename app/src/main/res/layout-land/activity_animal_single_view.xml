@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4C3">
+
+    <ImageView
+        android:id="@+id/AnimalSingleView"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todoi" />
+    <TextView
+        android:id="@+id/AnimalTVSingleView"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:text="@string/ddv"
+        android:textSize="40sp"
+        android:layout_above="@+id/Animalbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/animalbtnPronountiation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/pronountiationbtnshape"
+        android:text="@string/o"
+        android:textSize="20sp"
+        android:onClick="AnimalPronountiation"
+        android:layout_marginEnd="35dp"
+        android:layout_below="@+id/AnimalTVSingleView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageButton
+        android:id="@+id/Animalbtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="AnimalSound"
+        android:src="@mipmap/audioicon"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/animalbtnPronountiation"
+        android:layout_toStartOf="@+id/animalbtnPronountiation"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/todor" />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/backbtn"
+        android:background="@null"
+        android:onClick="backtoAnimalGridV"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/AnimalTVSingleView"
+        android:layout_alignStart="@+id/AnimalTVSingleView"
+        android:contentDescription="@string/todoui" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7036610474547852/5458427194"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

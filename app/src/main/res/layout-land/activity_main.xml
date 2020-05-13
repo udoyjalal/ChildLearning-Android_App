@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain">
+
+
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:onClick="goBird"
+        android:src="@mipmap/eagle"
+        android:background="@null"
+        android:id="@+id/imageButton5"
+        android:layout_marginRight="193dp"
+        android:layout_marginEnd="193dp"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo" />
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@mipmap/peacock"
+        android:background="@null"
+        android:onClick="goBird"
+        android:id="@+id/imageButton4"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp"
+        android:contentDescription="@string/todo" />
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@mipmap/heron"
+        android:background="@null"
+        android:onClick="goBird"
+        android:layout_marginTop="66dp"
+        android:id="@+id/imageButton3"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/imageButton5"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:onClick="goAnimal"
+        android:src="@mipmap/cat"
+        android:background="@null"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:contentDescription="@string/todo" />
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:onClick="goAnimal"
+        android:src="@mipmap/monkey"
+        android:background="@null"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:id="@+id/imageButton8"
+        android:contentDescription="@string/todo" />
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:onClick="goAnimal"
+        android:src="@mipmap/elephant"
+        android:background="@null"
+        android:layout_below="@+id/imageButton5"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageButton7"
+        android:contentDescription="@string/todo" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

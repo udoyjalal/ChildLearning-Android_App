@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    android:orientation="vertical"
+    tools:context="com.maria.user_pc.gridview.MainActivity">
+
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:onClick="goBird"
+        android:id="@+id/button"
+        android:src="@mipmap/eagle"
+        android:background="@null"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="88dp"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:onClick="goBird"
+        android:src="@mipmap/peacock"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="88dp" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="27dp"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:onClick="goBird"
+        android:src="@mipmap/heron"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/imageButton2"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:onClick="goAnimal"
+        android:src="@mipmap/cat"
+        android:layout_alignLeft="@+id/button" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignTop="@+id/imageButton6"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:onClick="goAnimal"
+        android:src="@mipmap/monkey"
+        android:layout_alignLeft="@+id/button3" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginBottom="123dp"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:onClick="goAnimal"
+        android:src="@mipmap/elephant"
+        android:layout_alignLeft="@+id/button2" />
+
+    <Button
+        android:id="@+id/btnprivacyPolicy"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="privacyPolicy"
+        android:text="@string/privacy_policy"
+        android:textSize="12sp" />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8360713139937961/7624016649">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>
